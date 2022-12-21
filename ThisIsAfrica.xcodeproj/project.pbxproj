@@ -32,6 +32,9 @@
 		33B1A73829521E4D00B23F3A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B1A73729521E4D00B23F3A /* MapView.swift */; };
 		33B1A73A29521E8300B23F3A /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B1A73929521E8300B23F3A /* GalleryView.swift */; };
 		33B1A73C295221DD00B23F3A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B1A73B295221DD00B23F3A /* MainView.swift */; };
+		33B1A7402952406600B23F3A /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B1A73F2952406600B23F3A /* CoverImageView.swift */; };
+		33B1A7432952451B00B23F3A /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B1A7422952451B00B23F3A /* CoverImageModel.swift */; };
+		33B1A7462952473200B23F3A /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B1A7452952473200B23F3A /* CodableBundleExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,9 @@
 		33B1A73729521E4D00B23F3A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		33B1A73929521E8300B23F3A /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		33B1A73B295221DD00B23F3A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		33B1A73F2952406600B23F3A /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
+		33B1A7422952451B00B23F3A /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
+		33B1A7452952473200B23F3A /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,9 +137,12 @@
 		332DFF42295120510072BC12 /* ThisIsAfrica */ = {
 			isa = PBXGroup;
 			children = (
+				33B1A744295246EA00B23F3A /* Ectension */,
+				33B1A741295244F000B23F3A /* Model */,
+				33B1A73D2952400100B23F3A /* View */,
+				33B1A73429521C9C00B23F3A /* App */,
 				33B1A72A2951FD5600B23F3A /* Data */,
 				33B1A7152951FC8300B23F3A /* Video */,
-				33B1A73429521C9C00B23F3A /* App */,
 				332DFF47295120540072BC12 /* Assets.xcassets */,
 				33B1A7332952008500B23F3A /* Info.plist */,
 				332DFF49295120540072BC12 /* Preview Content */,
@@ -205,6 +214,30 @@
 				33B1A73B295221DD00B23F3A /* MainView.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		33B1A73D2952400100B23F3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				33B1A73F2952406600B23F3A /* CoverImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33B1A741295244F000B23F3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33B1A7422952451B00B23F3A /* CoverImageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33B1A744295246EA00B23F3A /* Ectension */ = {
+			isa = PBXGroup;
+			children = (
+				33B1A7452952473200B23F3A /* CodableBundleExtension.swift */,
+			);
+			path = Ectension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,10 +386,13 @@
 			files = (
 				332DFF46295120510072BC12 /* ContentView.swift in Sources */,
 				33B1A73C295221DD00B23F3A /* MainView.swift in Sources */,
+				33B1A7402952406600B23F3A /* CoverImageView.swift in Sources */,
+				33B1A7432952451B00B23F3A /* CoverImageModel.swift in Sources */,
 				33B1A73829521E4D00B23F3A /* MapView.swift in Sources */,
 				332DFF44295120510072BC12 /* ThisIsAfricaApp.swift in Sources */,
 				33B1A73629521E2000B23F3A /* VideoListView.swift in Sources */,
 				33B1A73A29521E8300B23F3A /* GalleryView.swift in Sources */,
+				33B1A7462952473200B23F3A /* CodableBundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
