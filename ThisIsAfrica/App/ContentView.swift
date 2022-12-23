@@ -19,6 +19,8 @@ struct ContentView: View {
              CoverImageView()
                     .frame(height: 300)
                     .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                    .cornerRadius(15)
+                    .listRowBackground(Color.clear)
                 ForEach(animals) { animal in
                     NavigationLink(destination: AnimalDetailView(animal: animal)){
                         AnimalListItemView(animal: animal)
