@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		330765E0295789BF00D95957 /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330765DF295789BF00D95957 /* InsetMapView.swift */; };
+		330765E2295795B900D95957 /* ExternalWeblinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330765E1295795B900D95957 /* ExternalWeblinkView.swift */; };
 		331822F82952D13B00BB92BF /* AnimalListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331822F72952D13B00BB92BF /* AnimalListItemView.swift */; };
 		331822FA295309D900BB92BF /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331822F9295309D900BB92BF /* AnimalModel.swift */; };
 		332DFF44295120510072BC12 /* ThisIsAfricaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332DFF43295120510072BC12 /* ThisIsAfricaApp.swift */; };
@@ -63,6 +64,7 @@
 
 /* Begin PBXFileReference section */
 		330765DF295789BF00D95957 /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
+		330765E1295795B900D95957 /* ExternalWeblinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalWeblinkView.swift; sourceTree = "<group>"; };
 		331822F72952D13B00BB92BF /* AnimalListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListItemView.swift; sourceTree = "<group>"; };
 		331822F9295309D900BB92BF /* AnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalModel.swift; sourceTree = "<group>"; };
 		332DFF40295120510072BC12 /* ThisIsAfrica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThisIsAfrica.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -240,6 +242,7 @@
 				3388C7DD29564E810000D0A9 /* InsetGalleryView.swift */,
 				33D8D7DA295658E600CAE99F /* InsetFactView.swift */,
 				330765DF295789BF00D95957 /* InsetMapView.swift */,
+				330765E1295795B900D95957 /* ExternalWeblinkView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				330765E2295795B900D95957 /* ExternalWeblinkView.swift in Sources */,
 				332DFF46295120510072BC12 /* ContentView.swift in Sources */,
 				331822F82952D13B00BB92BF /* AnimalListItemView.swift in Sources */,
 				33B1A73C295221DD00B23F3A /* MainView.swift in Sources */,
