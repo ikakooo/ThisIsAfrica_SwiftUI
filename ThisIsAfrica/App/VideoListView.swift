@@ -10,7 +10,7 @@ import SwiftUI
 struct VideoListView: View {
     // MARK: - PROPERTIES
     
-   @State var videos: [Video] = Bundle.main.decode("videos.json")
+    @State var videos: [Video] = Bundle.main.decode("videos.json")
     let hapticImpact = UIImpactFeedbackGenerator(style: .medium)
     
     // MARK: - BODY
@@ -21,7 +21,7 @@ struct VideoListView: View {
                     VideoListItemView(video: video)
                         .padding(.vertical, 8)
                 }
-                    //.listRowBackground(Color.clear)
+                //.listRowBackground(Color.clear)
             } //: LIST
             .frame( maxWidth: .infinity)
             //.edgesIgnoringSafeArea(.all)
