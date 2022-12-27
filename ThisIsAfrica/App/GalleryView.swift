@@ -13,14 +13,23 @@ struct GalleryView: View {
     @State private var selectedAnimal: String = "lion"
     
     let animals: [Animal] = Bundle.main.decode("animals.json")
+    let haptics = UIImpactFeedbackGenerator(style: .medium)
     
-    // GRID ITEMS
-    let gridLayout: [GridItem] = [
-        GridItem(.flexible()),
-        GridItem(.flexible()),
-        //GridItem(.flexible()),
-        GridItem(.flexible())
-    ]
+//    // GRID ITEMS
+//    let gridLayout: [GridItem] = [
+//        GridItem(.flexible()),
+//        GridItem(.flexible()),
+//        //GridItem(.flexible()),
+//        GridItem(.flexible())
+//    ]
+    
+    // DINAMIC GRID LAYOUT
+    @State private var gridLayout: [GridItem] = [GridItem(.flexible())]
+    @State private var gridColumn: Double = 3.0
+    
+    func gridSwitch(){
+        gridLayout = Array(repeating: .init(.flexible()), count: Int(gridColumn))
+    }
     
     // MARK: - BODY
     var body: some View {
@@ -35,6 +44,15 @@ struct GalleryView: View {
                     .clipShape(Circle())
                     .overlay(Circle().stroke(.white, lineWidth: 8))
                 
+                // MARK: - SLIDER
+                
+                Slider(value: $gridColumn, in: 2...4, step: 1)
+                    .padding(.horizontal)
+                    .onChange(of: gridColumn, perform: { value in
+                        gridSwitch()
+                        
+                    })
+                
                 
                 // MARK: GRID
                 
@@ -47,10 +65,15 @@ struct GalleryView: View {
                             .overlay(Circle().stroke(.white, lineWidth: 1))
                             .onTapGesture {
                                 selectedAnimal = animal.image
+                                haptics.impactOccurred()
                             }
                     }
                     
                 } //: GRID
+                .animation(.easeIn)
+                .onAppear(perform: {
+                    gridSwitch()
+                })
             } //: VSTACK
             .padding(.vertical, 50)
             .padding(.horizontal, 10)
