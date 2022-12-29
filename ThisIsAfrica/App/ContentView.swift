@@ -18,6 +18,7 @@ struct ContentView: View {
     @State private var gridLayout: [GridItem] = [GridItem(.flexible())]
     @State private var gridColumn: Int = 1
     @State private var toolbarIcon: String = "square.grid.2x2"
+    @State private var sidebarVisible: Bool = true
     
     // MARK: FUNCTIONS
     
@@ -51,6 +52,9 @@ struct ContentView: View {
                             }
                             .listRowBackground(Color.clear)
                         } //: LOOP
+                        CreditsView()
+                            .modifier(CenterModifier())
+                            .listRowBackground(Color.clear)
                     } //: LIST
                 } else {
                     ScrollView(.vertical, showsIndicators: false) {
@@ -103,6 +107,7 @@ struct ContentView: View {
                     }
             }
         } //: NAVIGATION
+        .navigationViewStyle(StackNavigationViewStyle())
     }
     
 }

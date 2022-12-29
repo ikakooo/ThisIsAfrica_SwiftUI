@@ -80,6 +80,7 @@ struct GalleryView: View {
         } //: SCROLL
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(MotionAnimationView())
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

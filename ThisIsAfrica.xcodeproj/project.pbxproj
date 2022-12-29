@@ -16,7 +16,7 @@
 		331822FA295309D900BB92BF /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331822F9295309D900BB92BF /* AnimalModel.swift */; };
 		3325CCEE295D0DD9004D723E /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325CCED295D0DD9004D723E /* AnimalGridItemView.swift */; };
 		3325CCF4295D3E7C004D723E /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3325CCF3295D3E7C004D723E /* Stickers.xcassets */; };
-		3325CCF8295D3E7C004D723E /* Stickers.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3325CCF1295D3E7A004D723E /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3325CCF8295D3E7C004D723E /* Stickers.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3325CCF1295D3E7A004D723E /* Stickers.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		332DFF44295120510072BC12 /* ThisIsAfricaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332DFF43295120510072BC12 /* ThisIsAfricaApp.swift */; };
 		332DFF46295120510072BC12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332DFF45295120510072BC12 /* ContentView.swift */; };
 		332DFF48295120540072BC12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 332DFF47295120540072BC12 /* Assets.xcassets */; };
@@ -53,6 +53,8 @@
 		33B1A7432952451B00B23F3A /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B1A7422952451B00B23F3A /* CoverImageModel.swift */; };
 		33B1A7462952473200B23F3A /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B1A7452952473200B23F3A /* CodableBundleExtension.swift */; };
 		33D8D7DB295658E600CAE99F /* InsetFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D8D7DA295658E600CAE99F /* InsetFactView.swift */; };
+		33E2D66B295D9B0A006DCFFB /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E2D66A295D9B0A006DCFFB /* CreditsView.swift */; };
+		33E2D66E295D9D11006DCFFB /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E2D66D295D9D11006DCFFB /* CenterModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +147,9 @@
 		33B1A7422952451B00B23F3A /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
 		33B1A7452952473200B23F3A /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
 		33D8D7DA295658E600CAE99F /* InsetFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetFactView.swift; sourceTree = "<group>"; };
+		33E2D66A295D9B0A006DCFFB /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		33E2D66D295D9D11006DCFFB /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
+		33E2D66F295E049A006DCFFB /* ThisIsAfrica.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThisIsAfrica.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +211,8 @@
 		332DFF42295120510072BC12 /* ThisIsAfrica */ = {
 			isa = PBXGroup;
 			children = (
+				33E2D66F295E049A006DCFFB /* ThisIsAfrica.entitlements */,
+				33E2D66C295D9CE2006DCFFB /* Modifier */,
 				3397F7062957D28400F92EFF /* Helper */,
 				33B1A741295244F000B23F3A /* Model */,
 				33B1A73D2952400100B23F3A /* View */,
@@ -310,6 +317,7 @@
 				334D114129584914007713EF /* MapAnotationView.swift */,
 				334D11432958990E007713EF /* MotionAnimationView.swift */,
 				3325CCED295D0DD9004D723E /* AnimalGridItemView.swift */,
+				33E2D66A295D9B0A006DCFFB /* CreditsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -331,6 +339,14 @@
 				33B1A7452952473200B23F3A /* CodableBundleExtension.swift */,
 			);
 			path = Ectension;
+			sourceTree = "<group>";
+		};
+		33E2D66C295D9CE2006DCFFB /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				33E2D66D295D9D11006DCFFB /* CenterModifier.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -527,8 +543,10 @@
 				3325CCEE295D0DD9004D723E /* AnimalGridItemView.swift in Sources */,
 				33B1A73A29521E8300B23F3A /* GalleryView.swift in Sources */,
 				3388C7DE29564E810000D0A9 /* InsetGalleryView.swift in Sources */,
+				33E2D66B295D9B0A006DCFFB /* CreditsView.swift in Sources */,
 				33B1A7462952473200B23F3A /* CodableBundleExtension.swift in Sources */,
 				334D11442958990E007713EF /* MotionAnimationView.swift in Sources */,
+				33E2D66E295D9D11006DCFFB /* CenterModifier.swift in Sources */,
 				3388C7DC295649E90000D0A9 /* HeadingView.swift in Sources */,
 				330765E82957C0A300D95957 /* VideoPlayerView.swift in Sources */,
 			);
@@ -556,6 +574,7 @@
 /* Begin PBXTargetDependency section */
 		3325CCF7295D3E7C004D723E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 3325CCF0295D3E7A004D723E /* Stickers */;
 			targetProxy = 3325CCF6295D3E7C004D723E /* PBXContainerItemProxy */;
 		};
@@ -587,6 +606,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ikakooo.ThisIsAfrica.Stickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -607,6 +627,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ikakooo.ThisIsAfrica.Stickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -731,6 +752,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ThisIsAfrica/ThisIsAfrica.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ThisIsAfrica/Preview Content\"";
@@ -738,6 +760,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ThisIsAfrica/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -751,6 +774,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ikakooo.ThisIsAfrica;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -762,6 +788,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ThisIsAfrica/ThisIsAfrica.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ThisIsAfrica/Preview Content\"";
@@ -769,6 +796,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ThisIsAfrica/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -782,6 +810,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ikakooo.ThisIsAfrica;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
